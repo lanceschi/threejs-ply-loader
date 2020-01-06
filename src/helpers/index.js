@@ -1,4 +1,5 @@
 /**
+ * Convert passed node Buffer to ArrayBuffer
  * @param  {Buffer} buf
  * @returns {ArrayBuffer}
  */
@@ -16,8 +17,8 @@ const bufferToArrayBuffer = (buf) => {
   }
 
   return ab;
-}
+};
 
 module.exports = {
   bufferToArrayBuffer
-}
+};

@@ -1,12 +1,13 @@
 /**
  * @author lanceschi / https://github.com/lanceschi
- * Simple example that renders a scene with a vertex-colored cube to a PNG image file.
+ * Simple example that renders a scene with a vertex-colored cube to a PNG image file
  */
 const THREE = require('three');
 const {SoftwareRenderer} = require('three-software-renderer');
 const {PNG} = require('pngjs');
 const fs = require('fs');
-const plyLoader = require('../src')(THREE);
+const PLYLoader = require('../src')(THREE);
+const {join} = require('path');
 
 
 (() => {
@@ -19,11 +20,16 @@ const plyLoader = require('../src')(THREE);
     camera.position.set(2, 2, 2);
     camera.lookAt(0, 0, 0);
 
-    // Read 3D Model as PLY file
-    const fileBuffer = fs.readFileSync('assets/cube.ply')
+    // Read 3D Model as PLY file format
+    const sourceFilepath = join(__dirname, 'assets/cube.ply');
+    const fileBuffer = fs.readFileSync(sourceFilepath);
+
+    // Instantiate PLYLoader object
+    const plyLoader = new PLYLoader();
 
     // Conver node file Buffer to ArrayBuffer
     const fileArrayBuffer = plyLoader.bufferToArrayBuffer(fileBuffer);
+
 
     // Parse 3D model geometry
     const geometry = plyLoader.parse(fileArrayBuffer);
@@ -42,7 +48,8 @@ const plyLoader = require('../src')(THREE);
     // Render into pixels-array (RGBA)
     const renderer = new SoftwareRenderer();
     renderer.setSize(width, height);
-    var imagedata = renderer.render(scene, camera);
+
+    const imagedata = renderer.render(scene, camera);
 
     // Create a PNG from the pixels array (RGBA)
     const png = new PNG({
@@ -56,10 +63,13 @@ const plyLoader = require('../src')(THREE);
     }
 
 
-    if (!fs.existsSync("temp")) {
-      fs.mkdirSync("temp");
+    const destPath = join(__dirname, 'temp');
+    const destFilepath = join(destPath, 'vertex-colored-cube.png');
+
+    if (!fs.existsSync(destPath)) {
+      fs.mkdirSync(destPath);
     }
-    png.pack().pipe(fs.createWriteStream("temp/vertex-colored-cube.png"));
+    png.pack().pipe(fs.createWriteStream(destFilepath));
 
   } catch (e) {
     console.trace(e);
