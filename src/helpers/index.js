@@ -1,4 +1,5 @@
 /**
+ * Convert passed node Buffer to ArrayBuffer
  * @param  {Buffer} buf
  * @returns {ArrayBuffer}
  */

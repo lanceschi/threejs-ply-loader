@@ -6,7 +6,7 @@ const THREE = require('three');
 const {SoftwareRenderer} = require('three-software-renderer');
 const {PNG} = require('pngjs');
 const fs = require('fs');
-const plyLoader = require('../src')(THREE);
+const PLYLoader = require('../src')(THREE);
 
 
 (() => {
@@ -22,8 +22,12 @@ const plyLoader = require('../src')(THREE);
     // Read 3D Model as PLY file
     const fileBuffer = fs.readFileSync('assets/cube.ply')
 
+    // Instantiate PLYLoader object
+    const plyLoader = new PLYLoader();
+
     // Conver node file Buffer to ArrayBuffer
     const fileArrayBuffer = plyLoader.bufferToArrayBuffer(fileBuffer);
+
 
     // Parse 3D model geometry
     const geometry = plyLoader.parse(fileArrayBuffer);

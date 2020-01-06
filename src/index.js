@@ -25,11 +25,13 @@
  * } );
  *
  */
-const THREE = require('three');
+let THREE;
 const {bufferToArrayBuffer} = require('./helpers');
 
-module.exports = (THREE) => {
-  THREE.PLYLoader = function ( manager ) {
+module.exports = (three) => {
+  THREE = three;
+
+  PLYLoader = function ( manager ) {
 
     THREE.Loader.call( this, manager );
 
@@ -37,7 +39,7 @@ module.exports = (THREE) => {
 
   };
 
-  THREE.PLYLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype ), {
+  PLYLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype ), {
 
     constructor: THREE.PLYLoader,
 
@@ -503,5 +505,5 @@ module.exports = (THREE) => {
 
   });
 
-  return new THREE.PLYLoader();
+  return PLYLoader;
 }
