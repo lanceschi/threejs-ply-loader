@@ -51,7 +51,7 @@ describe('Library main test suite', () => {
     // Read 3D Model as PLY file
     const fileBuffer = fs.readFileSync('./examples/assets/cube.ply');
 
-    // Conver node file Buffer to ArrayBuffer
+    // Convert node file Buffer to ArrayBuffer
     const fileArrayBuffer = plyLoader.bufferToArrayBuffer(fileBuffer);
 
     expect(fileArrayBuffer).to.be.a('ArrayBuffer');
@@ -66,7 +66,7 @@ describe('Library main test suite', () => {
     // Read 3D Model as PLY file
     const fileBuffer = fs.readFileSync('./examples/assets/cube.ply');
 
-    // Conver node file Buffer to ArrayBuffer
+    // Convert node file Buffer to ArrayBuffer
     const fileArrayBuffer = plyLoader.bufferToArrayBuffer(fileBuffer);
 
     // Parse 3D model geometry
