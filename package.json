@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha tests",
-    "test:watch": "mocha -- --watch tests"
+    "test:watch": "mocha -- --watch tests",
+    "example:cube-to-png": "cd examples && node ply-model-to-png.js"
   },
   "repository": {
     "type": "git",

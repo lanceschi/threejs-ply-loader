@@ -17,8 +17,8 @@ const bufferToArrayBuffer = (buf) => {
   }
 
   return ab;
-}
+};
 
 module.exports = {
   bufferToArrayBuffer
-}
+};

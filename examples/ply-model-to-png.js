@@ -7,6 +7,7 @@ const {SoftwareRenderer} = require('three-software-renderer');
 const {PNG} = require('pngjs');
 const fs = require('fs');
 const PLYLoader = require('../src')(THREE);
+const {join} = require('path');
 
 
 (() => {
@@ -19,8 +20,9 @@ const PLYLoader = require('../src')(THREE);
     camera.position.set(2, 2, 2);
     camera.lookAt(0, 0, 0);
 
-    // Read 3D Model as PLY file
-    const fileBuffer = fs.readFileSync('assets/cube.ply')
+    // Read 3D Model as PLY file format
+    const sourceFilepath = join(__dirname, 'assets/cube.ply');
+    const fileBuffer = fs.readFileSync(sourceFilepath);
 
     // Instantiate PLYLoader object
     const plyLoader = new PLYLoader();
@@ -61,10 +63,13 @@ const PLYLoader = require('../src')(THREE);
     }
 
 
-    if (!fs.existsSync("temp")) {
-      fs.mkdirSync("temp");
+    const destPath = join(__dirname, 'temp');
+    const destFilepath = join(destPath, 'vertex-colored-cube.png');
+
+    if (!fs.existsSync(destPath)) {
+      fs.mkdirSync(destPath);
     }
-    png.pack().pipe(fs.createWriteStream("temp/vertex-colored-cube.png"));
+    png.pack().pipe(fs.createWriteStream(destFilepath));
 
   } catch (e) {
     console.trace(e);

@@ -31,7 +31,7 @@ const {bufferToArrayBuffer} = require('./helpers');
 module.exports = (three) => {
   THREE = three;
 
-  PLYLoader = function ( manager ) {
+  let PLYLoader = function ( manager ) {
 
     THREE.Loader.call( this, manager );
 
