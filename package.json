@@ -1,0 +1,39 @@
+{
+  "name": "threejs-ply-loader",
+  "version": "1.0.0",
+  "description": "Node.js wrapper for three.js PLYLoader",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanceschi/threejs-ply-loader.git"
+  },
+  "keywords": [
+    "three.js",
+    "threejs",
+    "PLYLoader"
+  ],
+  "author": "lanceschi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lanceschi/threejs-ply-loader/issues"
+  },
+  "homepage": "https://github.com/lanceschi/threejs-ply-loader#readme",
+  "devDependencies": {
+    "pngjs": "^3.4.0",
+    "three": "^0.112.1",
+    "three-software-renderer": "https://github.com/lanceschi/three-software-renderer.git#feature/projector-update"
+  },
+  "peerDependencies": {
+    "three": "^0.112.1"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "directories": {
+    "example": "examples"
+  }
+}
