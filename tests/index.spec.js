@@ -6,7 +6,7 @@ describe('Library main test suite', () => {
   it('PLYLoader should be imported correctly', () => {
     const PLYLoader = require('../src')(THREE);
 
-    PLYLoader.should.be.a('function');
+    expect(PLYLoader).to.be.a('function');
   });
 
   it('Should instantiate correctly the PLYLoader object', () => {

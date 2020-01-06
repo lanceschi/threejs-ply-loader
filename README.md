@@ -44,6 +44,14 @@ $ npm run example:cube-to-png
 The output image is going to located in `examples/temp/vertex-colored-cube.png`
 
 
+## Tests
+They can be run from a shell:
+
+```bash
+$ npm install
+$ npm test
+```
+
 [THREEJS-github-link]: https://github.com/mrdoob/three.js
 [PLYLoader-source-link]: https://github.com/mrdoob/three.js/blob/dev/examples/js/loaders/PLYLoader.js
 
