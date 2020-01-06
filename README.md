@@ -1,7 +1,9 @@
-# Threejs Ply Loader to use with Node.js
+# Three.js PLY file format loader to use with Node.js
 
 ## Description
-Node.js wrapper for [three.js][THREEJS-github-link] PLYLoader (currently three.js v0.112.1). Original PLYLoader source code can be found [here][PLYLoader-source-link].
+Node.js wrapper for [three.js][THREEJS-github-link] PLYLoader (currently three.js v0.112.1).
+
+Original PLYLoader source code can be found [here][PLYLoader-source-link].
 
 Beside some minor edits, I added an additional helper function for converting Node Buffer to ArrayBuffer (convenience-wise) and I put in place tests.
 
