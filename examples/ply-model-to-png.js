@@ -1,6 +1,6 @@
 /**
  * @author lanceschi / https://github.com/lanceschi
- * Simple example that renders a scene with a vertex-colored cube to a PNG image file.
+ * Simple example that renders a scene with a vertex-colored cube to a PNG image file
  */
 const THREE = require('three');
 const {SoftwareRenderer} = require('three-software-renderer');
@@ -46,7 +46,8 @@ const PLYLoader = require('../src')(THREE);
     // Render into pixels-array (RGBA)
     const renderer = new SoftwareRenderer();
     renderer.setSize(width, height);
-    var imagedata = renderer.render(scene, camera);
+
+    const imagedata = renderer.render(scene, camera);
 
     // Create a PNG from the pixels array (RGBA)
     const png = new PNG({

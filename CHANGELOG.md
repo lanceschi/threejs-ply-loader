@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Added `mocha` NPM to **devDependencies**
 - Added `chai` NPM to **devDependencies**
+- Added `eslint` NPM to **devDependencies**
 - Added `index.spec.js` file and code to the `tests` folder
 - Added **test** and **test:watch** to `scripts` property of `package.json` file
 

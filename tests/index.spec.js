@@ -6,7 +6,7 @@ describe('Library main test suite', () => {
   it('PLYLoader should be imported correctly', () => {
     const PLYLoader = require('../src')(THREE);
 
-    PLYLoader.should.be.a('function')
+    PLYLoader.should.be.a('function');
   });
 
   it('Should instantiate correctly the PLYLoader object', () => {
@@ -14,10 +14,10 @@ describe('Library main test suite', () => {
     const plyLoader = new PLYLoader();
 
     expect(plyLoader).to.be.a('object');
-    expect(plyLoader).to.be.an.instanceof(PLYLoader);    
+    expect(plyLoader).to.be.an.instanceof(PLYLoader);
     expect(plyLoader).to.have.property('bufferToArrayBuffer');
   });
-  
+
   it('PLYLoader instance should feature a bufferToArrayBuffer function', () => {
     const PLYLoader = require('../src')(THREE);
     const plyLoader = new PLYLoader();
@@ -44,34 +44,35 @@ describe('Library main test suite', () => {
   });
 
   it('PLYLoader bufferToArrayBuffer should convert Buffer to ArrayBuffer', () => {
+    const fs = require('fs');
     const PLYLoader = require('../src')(THREE);
     const plyLoader = new PLYLoader();
 
-    const fs = require('fs');
     // Read 3D Model as PLY file
     const fileBuffer = fs.readFileSync('./examples/assets/cube.ply');
 
     // Conver node file Buffer to ArrayBuffer
-    const fileArrayBuffer = plyLoader.bufferToArrayBuffer(fileBuffer);    
+    const fileArrayBuffer = plyLoader.bufferToArrayBuffer(fileBuffer);
 
     expect(fileArrayBuffer).to.be.a('ArrayBuffer');
   });
 
   it('Parsed file should an instance of BufferGeometry', () => {
+    const fs = require('fs');
     const PLYLoader = require('../src')(THREE);
     const plyLoader = new PLYLoader();
 
-    const fs = require('fs');
+
     // Read 3D Model as PLY file
     const fileBuffer = fs.readFileSync('./examples/assets/cube.ply');
 
     // Conver node file Buffer to ArrayBuffer
-    const fileArrayBuffer = plyLoader.bufferToArrayBuffer(fileBuffer);    
+    const fileArrayBuffer = plyLoader.bufferToArrayBuffer(fileBuffer);
 
     // Parse 3D model geometry
     const geometry = plyLoader.parse(fileArrayBuffer);
 
     expect(geometry).to.be.a('object');
-    expect(geometry).to.be.an.instanceof(THREE.BufferGeometry);    
+    expect(geometry).to.be.an.instanceof(THREE.BufferGeometry);
   });
 });
