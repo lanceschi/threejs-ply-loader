@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+- **README.md** edits
+
 ## [v1.1.1] - 2020-03-29
 ### Changed
 - Upgraded `three` NPM dependency to `0.115.0`
