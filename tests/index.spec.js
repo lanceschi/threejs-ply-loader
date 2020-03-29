@@ -1,6 +1,5 @@
 const THREE = require('three');
-const {expect} = require('chai');
-
+const { expect } = require('chai');
 
 describe('Library main test suite', () => {
   it('PLYLoader should be imported correctly', () => {
@@ -61,7 +60,6 @@ describe('Library main test suite', () => {
     const fs = require('fs');
     const PLYLoader = require('../src')(THREE);
     const plyLoader = new PLYLoader();
-
 
     // Read 3D Model as PLY file
     const fileBuffer = fs.readFileSync('./examples/assets/cube.ply');
