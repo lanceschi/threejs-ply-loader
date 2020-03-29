@@ -1,7 +1,7 @@
 # Three.js PLY file format loader to use with Node.js
 
 ## Description
-Node.js wrapper for [three.js][THREEJS-github-link] PLYLoader (currently three.js v0.112.1).
+Node.js wrapper for [three.js][THREEJS-github-link] PLYLoader (currently three.js v0.115.1).
 
 Original PLYLoader source code can be found [here][PLYLoader-source-link].
 
@@ -53,7 +53,7 @@ $ npm test
 ```
 
 ## Development notes
-Developed with Node v12.14.0
+Developed with Node v12.16.1
 
 [THREEJS-github-link]: https://github.com/mrdoob/three.js
 [PLYLoader-source-link]: https://github.com/mrdoob/three.js/blob/dev/examples/js/loaders/PLYLoader.js
