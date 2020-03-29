@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
-- Upgraded `three` NPM dependnecy to `0.115.0`
+- Upgraded `three` NPM dependency to `0.115.0`
 
 ## [v1.1.0] - 2020-01-06
 ### Added
