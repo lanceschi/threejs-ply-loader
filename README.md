@@ -1,4 +1,5 @@
-![CI](https://github.com/lanceschi/threejs-ply-loader/workflows/CI/badge.svg)&nbsp;&nbsp;&nbsp;![NPM](https://github.com/lanceschi/threejs-ply-loader/workflows/NPM%20publish/badge.svg)
+![ci](https://github.com/lanceschi/threejs-ply-loader/workflows/ci/badge.svg)&nbsp;&nbsp;&nbsp;![npm publish](https://github.com/lanceschi/threejs-ply-loader/workflows/npm%20publish/badge.svg)&nbsp;&nbsp;&nbsp;[![npm version](https://badge.fury.io/js/threejs-ply-loader.svg)](http://badge.fury.io/js/threejs-ply-loader)
+
 
 # Three.js PLY file format loader to use with Node.js
 
