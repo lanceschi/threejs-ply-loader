@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node: [12]
+        node: ['12.16']
         os: [ubuntu-latest]
 
     steps:

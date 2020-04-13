@@ -1,3 +1,5 @@
+![CI](https://github.com/lanceschi/threejs-ply-loader/workflows/CI/badge.svg)
+
 # Three.js PLY file format loader to use with Node.js
 
 ## Description
