@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [v1.1.6] - 2020-04-13
+### Changed
+- Automated Github NPM publish workflow edits
+- **README.md** edits
+
 ## [v1.1.5] - 2020-04-13
 ### Added
 - Automated Github NPM publish workflow
