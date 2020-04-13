@@ -1,4 +1,4 @@
-![CI](https://github.com/lanceschi/threejs-ply-loader/workflows/CI/badge.svg)
+![CI](https://github.com/lanceschi/threejs-ply-loader/workflows/CI/badge.svg)&nbsp;&nbsp;&nbsp;![NPM](https://github.com/lanceschi/threejs-ply-loader/workflows/NPM%20publish/badge.svg)
 
 # Three.js PLY file format loader to use with Node.js
 
