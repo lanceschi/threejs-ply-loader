@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+### Changed
+- pngjs NPM devDependeny update to `v4.0.0`
+
 ## [v1.1.2] - 2020-03-29
 ### Changed
 - **README.md** edits
