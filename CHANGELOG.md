@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+### Added
+- Contributing policy file
+
+
 ## [v1.1.3] - 2020-04-13
 ### Changed
 - pngjs NPM devDependeny update to `v4.0.0`
