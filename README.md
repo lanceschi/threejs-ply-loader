@@ -1,4 +1,4 @@
-![ci](https://github.com/lanceschi/threejs-ply-loader/workflows/ci/badge.svg)&nbsp;&nbsp;&nbsp;![npm publish](https://github.com/lanceschi/threejs-ply-loader/workflows/npm%20publish/badge.svg)&nbsp;&nbsp;&nbsp;[![npm version](https://badge.fury.io/js/threejs-ply-loader.svg)](http://badge.fury.io/js/threejs-ply-loader)
+![ci](https://github.com/lanceschi/threejs-ply-loader/workflows/ci/badge.svg)&nbsp;&nbsp;&nbsp;![npm publish](https://github.com/lanceschi/threejs-ply-loader/workflows/npm%20publish/badge.svg)&nbsp;&nbsp;&nbsp;[![npm version](https://badge.fury.io/js/threejs-ply-loader.svg)](http://badge.fury.io/js/threejs-ply-loader)&nbsp;&nbsp;&nbsp;![npm](https://img.shields.io/npm/dm/threejs-ply-loader)
 
 
 # Three.js PLY file format loader to use with Node.js
@@ -13,18 +13,18 @@ Beside some minor edits, I added an additional helper function for converting No
 ## Usage
 
 ```javascript
-const fs = require('fs');
-const {join} = require('path');
-const THREE = require('three');
+const fs = require("fs");
+const { join } = require("path");
+const THREE = require("three");
 
 // Require object constructor
-const PLYLoader = require('threejs-ply-loader')(THREE);
+const PLYLoader = require("threejs-ply-loader")(THREE);
 
 // Instantiate PLYLoader object
 const plyLoader = new PLYLoader();
 
 // Read 3D Model as PLY file format
-const sourceFilepath = join(__dirname, 'assets/cube.ply');
+const sourceFilepath = join(__dirname, "assets/cube.ply");
 const fileBuffer = fs.readFileSync(sourceFilepath);
 
 // Convert node file Buffer to ArrayBuffer
