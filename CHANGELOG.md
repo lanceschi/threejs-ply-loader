@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+### Changed
+- README.md edits
+
 ## [v1.1.7] - 2020-04-13
 ### Added
 - NPM version badge
