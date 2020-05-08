@@ -36,7 +36,7 @@
     "three-software-renderer": "https://github.com/lanceschi/three-software-renderer.git#feature/projector-update"
   },
   "peerDependencies": {
-    "three": "^0.115.1"
+    "three": ">=0.115.0"
   },
   "dependencies": {},
   "engines": {
