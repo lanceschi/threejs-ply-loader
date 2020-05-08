@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [v1.1.9] - 2020-05-08
+### Changed
+- `three` peerDependency is now set to `>=0.115.0`. Thanks to [vanillaike][1]
+
 ## [v1.1.8] - 2020-04-18
 ### Changed
 - README.md edits
@@ -79,3 +83,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [nvm]: https://github.com/nvm-sh/nvm
 [plyloader-source-url]: https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/js/loaders/PLYLoader.js
+
+
+
+[1]: https://github.com/vanillaike
