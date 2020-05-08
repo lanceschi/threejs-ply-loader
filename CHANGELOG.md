@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [v1.1.9] - 2020-05-08
 ### Changed
 - `three` peerDependency is now set to `>=0.115.0`. Thanks to [vanillaike][1]
 
