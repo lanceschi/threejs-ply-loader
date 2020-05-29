@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [v1.1.10] - 2020-05-29
+### Changed
+- Node engine version is now set to `>=10.0.0`. Thanks to [Kevin Li][2]
+- `eslint` devDependency upgraded from `^6.8.0` to `^7.1.0`
+- `mocha` devDependency upgraded from `^7.1.1` to `^7.2.0`
+
 ## [v1.1.9] - 2020-05-08
 ### Changed
 - `three` peerDependency is now set to `>=0.115.0`. Thanks to [vanillaike][1]
@@ -87,3 +93,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 [1]: https://github.com/vanillaike
+[2]: https://github.com/jiaweihli

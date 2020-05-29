@@ -56,7 +56,7 @@ $ npm test
 ```
 
 ## Development notes
-Developed with Node v12.16.1
+Developed with Node v12.16.2
 
 [THREEJS-github-link]: https://github.com/mrdoob/three.js
 [PLYLoader-source-link]: https://github.com/mrdoob/three.js/blob/dev/examples/js/loaders/PLYLoader.js
