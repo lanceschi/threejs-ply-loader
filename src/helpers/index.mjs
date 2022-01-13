@@ -3,7 +3,7 @@
  * @param  {Buffer} buf
  * @returns {ArrayBuffer}
  */
-const bufferToArrayBuffer = (buf) => {
+export const bufferToArrayBuffer = (buf) => {
   if (Buffer.isBuffer(buf) === false) {
     throw new Error(`Passed argument is not of type Buffer. Can't proceed`);
   }
@@ -16,8 +16,4 @@ const bufferToArrayBuffer = (buf) => {
   }
 
   return ab;
-};
-
-module.exports = {
-  bufferToArrayBuffer,
 };

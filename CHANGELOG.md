@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.0.0] - 2022-01-13
+
+### Added
+
+- Added NPM packages:
+  - `cross-blob` `3.0.0`
+
+### Changed
+
+- Changed the library to a JavaScript Module
+- Node engine version is now set to `>=12.0.0`
+- Updated wrapped `PLYLoader` library to the latest: `0.136.0`
+- Partial test rewrote
+- README.md edits
+- NPM package upgrades:
+  - three ^0.125.0 → ^0.136.0
+
 ## [v1.2.2] - 2022-01-13
 
 ### Changed

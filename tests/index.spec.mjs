@@ -1,15 +1,10 @@
-const THREE = require('three');
-const fs = require('fs');
-const { expect } = require('chai');
+import THREE from 'three';
+import fs from 'fs';
+import { expect } from 'chai';
+import { PLYLoaderFactory } from '../src/index.mjs';
+const PLYLoader = PLYLoaderFactory(THREE);
 
-describe('Library main test suite | CommonJS', () => {
-  let PLYLoader;
-
-  before(async () => {
-    const { PLYLoaderFactory } = await import('../src/index.mjs');
-    PLYLoader = PLYLoaderFactory(THREE);
-  });
-
+describe('Library main test suite | JavaScript Module', () => {
   it('PLYLoader should be imported correctly', () => {
     expect(PLYLoader).to.be.a('function');
     expect(new PLYLoader()).to.be.an.instanceof(PLYLoader);

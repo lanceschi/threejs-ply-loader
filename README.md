@@ -4,11 +4,13 @@
 # Three.js PLY file format loader to use with Node.js
 
 ## Description
-Node.js wrapper for [three.js][THREEJS-github-link] PLYLoader (currently three.js v0.125.0).
+Node.js wrapper for [three.js][THREEJS-github-link] PLYLoader (currently three.js v0.136.0).
 
 Original PLYLoader source code can be found [here][PLYLoader-source-link].
 
 Beside some minor edits, I added an additional helper function for converting Node Buffer to ArrayBuffer (convenience-wise) and I put in place tests.
+
+This library was developed as a [JavaScript Module][javascript-module-url]. The recommended use with CommonJS files is through [dynamic imports][dynamic-import-url].
 
 ## Usage
 
@@ -17,21 +19,26 @@ const fs = require("fs");
 const { join } = require("path");
 const THREE = require("three");
 
-// Require object constructor
-const PLYLoader = require("threejs-ply-loader")(THREE);
+(async () => {
+  // Import PLYLoader Factory
+  const { PLYLoaderFactory } = await import("threejs-ply-loader");
 
-// Instantiate PLYLoader object
-const plyLoader = new PLYLoader();
+  // Initialize PLYLoader Class
+  const PLYLoader = PLYLoaderFactory(THREE);
 
-// Read 3D Model as PLY file format
-const sourceFilepath = join(__dirname, "assets/cube.ply");
-const fileBuffer = fs.readFileSync(sourceFilepath);
+  // Instantiate PLYLoader object
+  const plyLoader = new PLYLoader();
 
-// Convert node file Buffer to ArrayBuffer
-const fileArrayBuffer = plyLoader.bufferToArrayBuffer(fileBuffer);
+  // Read 3D Model as PLY file format
+  const sourceFilepath = join(__dirname, "assets/cube.ply");
+  const fileBuffer = fs.readFileSync(sourceFilepath);
 
-// Parse 3D model into THREE geometry
-const geometry = plyLoader.parse(fileArrayBuffer);
+  // Convert node file Buffer to ArrayBuffer
+  const fileArrayBuffer = plyLoader.bufferToArrayBuffer(fileBuffer);
+
+  // Parse 3D model into THREE geometry
+  const geometry = plyLoader.parse(fileArrayBuffer);
+})();
 ```
 
 
@@ -59,6 +66,6 @@ npm test
 Developed with Node v16.13.2
 
 [THREEJS-github-link]: https://github.com/mrdoob/three.js
-[PLYLoader-source-link]: https://github.com/mrdoob/three.js/blob/r115/examples/js/loaders/PLYLoader.js
-
-
+[PLYLoader-source-link]: https://github.com/mrdoob/three.js/blob/r136/examples/js/loaders/PLYLoader.js
+[javascript-module-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+[dynamic-import-url]: https://v8.dev/features/dynamic-import#dynamic
