@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
+### Added
+
+- Added test coverage script in `package.json`
+- NPM devDependencies:
+  - `c8` `^7.11.0`
 
 ## [v1.2.0] - 2022-01-13
+
+### Changed
 
 - Upgraded Node binary reference from `12.16` to `v16.13.2` in `.nvmrc`
 - `LICENSE` edits
@@ -25,12 +31,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - three ^0.115.0 → ^0.125.0
 
 ## [v1.1.10] - 2020-05-29
+
 ### Changed
+
 - Node engine version is now set to `>=10.0.0`. Thanks to [Kevin Li][2]
 - `eslint` devDependency upgraded from `^6.8.0` to `^7.1.0`
 - `mocha` devDependency upgraded from `^7.1.1` to `^7.2.0`
 
 ## [v1.1.9] - 2020-05-08
+
 ### Changed
 
 - Node engine version is now set to `>=10.0.0`. Thanks to [Kevin Li][2]
