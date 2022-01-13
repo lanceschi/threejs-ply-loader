@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - chai ^4.2.0 → ^4.3.4
   - eslint ^7.1.0 → ^8.6.0
   - mocha ^7.2.0 → ^9.1.3
+  - pngjs ^4.0.0 → ^6.0.0
 
 ## [v1.1.10] - 2020-05-29
 
