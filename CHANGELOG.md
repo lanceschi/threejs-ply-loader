@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Upgraded Node binary reference from `12.16` to `v16.13.2` in `.nvmrc`
+- Node engine version is now set to `>=12.0.0`
 - LICENSE edits
 - Beautified `src/helpers/index.js`
 - Beautified `src/index.js`
@@ -20,8 +21,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - mocha ^7.2.0 → ^9.1.3
   - pngjs ^4.0.0 → ^6.0.0
   - three >=0.112.0 → >=0.136.0
-
-## [v1.1.10] - 2020-05-29
 
 ## [v1.1.10] - 2020-05-29
 

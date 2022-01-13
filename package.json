@@ -2,7 +2,7 @@
   "name": "threejs-ply-loader",
   "version": "1.2.0",
   "description": "Node.js wrapper for three.js PLYLoader",
-  "main": "src/index.js",
+  "main": "src/index.mjs",
   "scripts": {
     "test": "mocha tests",
     "test:watch": "mocha -- --watch tests",
@@ -38,9 +38,11 @@
   "peerDependencies": {
     "three": ">=0.112.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "cross-blob": "^3.0.0"
+  },
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=12.0.0"
   },
   "directories": {
     "example": "examples"
