@@ -10,7 +10,7 @@ Original PLYLoader source code can be found [here][PLYLoader-source-link].
 
 Beside some minor edits, I added an additional helper function for converting Node Buffer to ArrayBuffer (convenience-wise) and I put in place tests.
 
-This library was developed as a [JavaScript Module][javascript-module-url]. The recommended use is through [dynamic imports][dynamic-import-url].
+This library was developed as a [JavaScript Module][javascript-module-url]. The recommended use with CommonJS files is through [dynamic imports][dynamic-import-url].
 
 ## Usage
 
