@@ -1,15 +1,16 @@
-const THREE = require('three');
-const { expect } = require('chai');
+import THREE from 'three';
+import fs from 'fs';
+import { expect } from 'chai';
+import { PLYLoaderFactory } from '../src/index.mjs';
+const PLYLoader = PLYLoaderFactory(THREE);
 
 describe('Library main test suite', () => {
   it('PLYLoader should be imported correctly', () => {
-    const PLYLoader = require('../src')(THREE);
-
     expect(PLYLoader).to.be.a('function');
+    expect(new PLYLoader()).to.be.an.instanceof(PLYLoader);
   });
 
   it('Should instantiate correctly the PLYLoader object', () => {
-    const PLYLoader = require('../src')(THREE);
     const plyLoader = new PLYLoader();
 
     expect(plyLoader).to.be.a('object');
@@ -18,7 +19,6 @@ describe('Library main test suite', () => {
   });
 
   it('PLYLoader instance should feature a bufferToArrayBuffer function', () => {
-    const PLYLoader = require('../src')(THREE);
     const plyLoader = new PLYLoader();
 
     expect(plyLoader).to.have.property('bufferToArrayBuffer');
@@ -26,7 +26,6 @@ describe('Library main test suite', () => {
   });
 
   it('PLYLoader instance should feature a parse function', () => {
-    const PLYLoader = require('../src')(THREE);
     const plyLoader = new PLYLoader();
 
     expect(plyLoader).to.have.property('parse');
@@ -34,7 +33,6 @@ describe('Library main test suite', () => {
   });
 
   it('PLYLoader bufferToArrayBuffer should throw if argument is not a Buffer', () => {
-    const PLYLoader = require('../src')(THREE);
     const plyLoader = new PLYLoader();
 
     const thowingFunc = () => plyLoader.bufferToArrayBuffer('Hahahah - ;)');
@@ -43,8 +41,6 @@ describe('Library main test suite', () => {
   });
 
   it('PLYLoader bufferToArrayBuffer should convert Buffer to ArrayBuffer', () => {
-    const fs = require('fs');
-    const PLYLoader = require('../src')(THREE);
     const plyLoader = new PLYLoader();
 
     // Read 3D Model as PLY file
@@ -57,8 +53,6 @@ describe('Library main test suite', () => {
   });
 
   it('Parsed file should an instance of BufferGeometry', () => {
-    const fs = require('fs');
-    const PLYLoader = require('../src')(THREE);
     const plyLoader = new PLYLoader();
 
     // Read 3D Model as PLY file

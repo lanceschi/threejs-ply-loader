@@ -6,10 +6,12 @@ const THREE = require('three');
 const { SoftwareRenderer } = require('three-software-renderer');
 const { PNG } = require('pngjs');
 const fs = require('fs');
-const PLYLoader = require('../src')(THREE);
 const { join } = require('path');
 
-(() => {
+(async () => {
+  const { PLYLoaderFactory } = await import('../src/index.mjs');
+  const PLYLoader = PLYLoaderFactory(THREE);
+
   try {
     // Scene and perspective camera setup
     const width = 1024;
