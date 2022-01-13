@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - LICENSE edits
 - Beautified `src/helpers/index.js`
 - Beautified `src/index.js`
+- Beautified `examples/ply-model-to-png.js`
 - NPM package upgrades:
   - chai ^4.2.0 → ^4.3.4
   - eslint ^7.1.0 → ^8.6.0
