@@ -1,6 +1,6 @@
 {
   "name": "threejs-ply-loader",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Node.js wrapper for three.js PLYLoader",
   "main": "src/index.js",
   "scripts": {
