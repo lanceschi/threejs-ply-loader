@@ -1,11 +1,12 @@
 {
   "name": "threejs-ply-loader",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Node.js wrapper for three.js PLYLoader",
   "main": "src/index.mjs",
   "scripts": {
     "test": "mocha tests",
     "test:watch": "mocha -- --watch tests",
+    "test:coverage": "c8 mocha tests",
     "example:cube-to-png": "cd examples && node ply-model-to-png.js"
   },
   "repository": {
@@ -28,15 +29,16 @@
   },
   "homepage": "https://github.com/lanceschi/threejs-ply-loader#readme",
   "devDependencies": {
+    "c8": "^7.11.0",
     "chai": "^4.3.4",
     "eslint": "^8.6.0",
     "mocha": "^9.1.3",
     "pngjs": "^6.0.0",
-    "three": ">=0.136.0",
+    "three": "^0.136.0",
     "three-software-renderer": "https://github.com/lanceschi/three-software-renderer.git#feature/projector-update"
   },
   "peerDependencies": {
-    "three": ">=0.112.0"
+    "three": "^0.112.1"
   },
   "dependencies": {
     "cross-blob": "^3.0.0"
