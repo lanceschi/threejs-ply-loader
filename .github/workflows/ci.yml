@@ -18,4 +18,4 @@ jobs:
           node-version: '16.13.2'
           registry-url: https://registry.npmjs.org
       - run: npm ci
-      - run: npm test:coverage
+      - run: npm run test:coverage
