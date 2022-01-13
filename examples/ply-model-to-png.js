@@ -3,12 +3,11 @@
  * Simple example that renders a scene with a vertex-colored cube to a PNG image file
  */
 const THREE = require('three');
-const {SoftwareRenderer} = require('three-software-renderer');
-const {PNG} = require('pngjs');
+const { SoftwareRenderer } = require('three-software-renderer');
+const { PNG } = require('pngjs');
 const fs = require('fs');
 const PLYLoader = require('../src')(THREE);
-const {join} = require('path');
-
+const { join } = require('path');
 
 (() => {
   try {
@@ -30,14 +29,13 @@ const {join} = require('path');
     // Conver node file Buffer to ArrayBuffer
     const fileArrayBuffer = plyLoader.bufferToArrayBuffer(fileBuffer);
 
-
     // Parse 3D model geometry
     const geometry = plyLoader.parse(fileArrayBuffer);
 
     // Setup the material for the mesh
     const materialProps = {
       vertexColors: THREE.VertexColors,
-      side: THREE.FrontSide
+      side: THREE.FrontSide,
     };
     const material = new THREE.MeshBasicMaterial(materialProps);
 
@@ -55,13 +53,12 @@ const {join} = require('path');
     const png = new PNG({
       width: width,
       height: height,
-      filterType: -1
+      filterType: -1,
     });
 
-    for (let i=0; i < imagedata.data.length; i++) {
+    for (let i = 0; i < imagedata.data.length; i++) {
       png.data[i] = imagedata.data[i];
     }
-
 
     const destPath = join(__dirname, 'temp');
     const destFilepath = join(destPath, 'vertex-colored-cube.png');
@@ -70,7 +67,6 @@ const {join} = require('path');
       fs.mkdirSync(destPath);
     }
     png.pack().pipe(fs.createWriteStream(destFilepath));
-
   } catch (e) {
     console.trace(e);
   }
