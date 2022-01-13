@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Upgraded Node binary reference from `12.16` to `v16.13.2` in `.nvmrc`
-- LICENSE edits
+- `LICENSE` edits
+- `README.md` edits
 - Beautified `src/helpers/index.js`
 - Beautified `src/index.js`
 - Beautified `examples/ply-model-to-png.js`
@@ -19,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - eslint ^7.1.0 → ^8.6.0
   - mocha ^7.2.0 → ^9.1.3
   - pngjs ^4.0.0 → ^6.0.0
+  - three ^0.115.0 → ^0.125.0
 
 ## [v1.1.10] - 2020-05-29
 

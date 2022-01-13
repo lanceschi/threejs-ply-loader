@@ -32,11 +32,11 @@
     "eslint": "^8.6.0",
     "mocha": "^9.1.3",
     "pngjs": "^6.0.0",
-    "three": "^0.115.0",
+    "three": "^0.125.0",
     "three-software-renderer": "https://github.com/lanceschi/three-software-renderer.git#feature/projector-update"
   },
   "peerDependencies": {
-    "three": ">=0.115.0"
+    "three": ">=0.125.0"
   },
   "dependencies": {},
   "engines": {
