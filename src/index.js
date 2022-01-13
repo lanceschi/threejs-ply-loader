@@ -28,10 +28,10 @@
 let THREE;
 const { bufferToArrayBuffer } = require('./helpers');
 
-module.exports = three => {
+module.exports = (three) => {
   THREE = three;
 
-  let PLYLoader = function(manager) {
+  let PLYLoader = function (manager) {
     THREE.Loader.call(this, manager);
 
     this.propertyNameMapping = {};
@@ -40,7 +40,7 @@ module.exports = three => {
   PLYLoader.prototype = Object.assign(Object.create(THREE.Loader.prototype), {
     constructor: THREE.PLYLoader,
 
-    load: function(url, onLoad, onProgress, onError) {
+    load: function (url, onLoad, onProgress, onError) {
       var scope = this;
 
       var loader = new THREE.FileLoader(this.manager);
@@ -48,7 +48,7 @@ module.exports = three => {
       loader.setResponseType('arraybuffer');
       loader.load(
         url,
-        function(text) {
+        function (text) {
           onLoad(scope.parse(text));
         },
         onProgress,
@@ -56,15 +56,15 @@ module.exports = three => {
       );
     },
 
-    setPropertyNameMapping: function(mapping) {
+    setPropertyNameMapping: function (mapping) {
       this.propertyNameMapping = mapping;
     },
 
-    bufferToArrayBuffer: function(buf) {
+    bufferToArrayBuffer: function (buf) {
       return bufferToArrayBuffer(buf);
     },
 
-    parse: function(data) {
+    parse: function (data) {
       function parseHeader(data) {
         var patternHeader = /ply([\s\S]*)end_header\r?\n/;
         var headerText = '';
