@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Changed the library to a javascript module
+- Changed the library to a JavaScript Module
 - Node engine version is now set to `>=12.0.0`
 - Updated wrapped `PLYLoader` library to the latest: `0.136.0`
 - Partial test rewrote
