@@ -1,3 +1,12 @@
+# OS generated files #
+######################
+.DS_Store?
+.DS_Store
+._.DS_Store
+ehthumbs.db
+._*
+Thumbs.db
+
 # Logs
 logs
 *.log

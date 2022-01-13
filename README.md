@@ -4,7 +4,7 @@
 # Three.js PLY file format loader to use with Node.js
 
 ## Description
-Node.js wrapper for [three.js][THREEJS-github-link] PLYLoader (currently three.js v0.115.0).
+Node.js wrapper for [three.js][THREEJS-github-link] PLYLoader (currently three.js v0.125.0).
 
 Original PLYLoader source code can be found [here][PLYLoader-source-link].
 
@@ -40,8 +40,8 @@ const geometry = plyLoader.parse(fileArrayBuffer);
 An example is present in the examples folder. It will load a PLY file model and output its rendering to a PNG file. It can be run from a shell:
 
 ```bash
-$ npm install
-$ npm run example:cube-to-png
+npm install
+npm run example:cube-to-png
 ```
 
 The output image is going to located in `examples/temp/vertex-colored-cube.png`
@@ -51,14 +51,14 @@ The output image is going to located in `examples/temp/vertex-colored-cube.png`
 They can be run from a shell:
 
 ```bash
-$ npm install
-$ npm test
+npm install
+npm test
 ```
 
 ## Development notes
-Developed with Node v12.16.2
+Developed with Node v16.13.2
 
 [THREEJS-github-link]: https://github.com/mrdoob/three.js
-[PLYLoader-source-link]: https://github.com/mrdoob/three.js/blob/dev/examples/js/loaders/PLYLoader.js
+[PLYLoader-source-link]: https://github.com/mrdoob/three.js/blob/r115/examples/js/loaders/PLYLoader.js
 
 
