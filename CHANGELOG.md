@@ -9,8 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- .nvmrc upgrade from `12.16` to `v16.13.2`
-- LICENCE edits
+- Upgraded Node binary reference from `12.16` to `v16.13.2` in `.nvmrc`
+- LICENSE edits
+- Beautified `src/helpers/index.js`
+- Beautified `src/index.js`
 - NPM package upgrades:
   - chai ^4.2.0 → ^4.3.4
   - eslint ^7.1.0 → ^8.6.0
