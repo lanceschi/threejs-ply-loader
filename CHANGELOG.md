@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- .nvmrc upgrade from `12.16` to `v16.13.2`
+- LICENCE edits
+- NPM package upgrades:
+-
+
 
 ## [v1.1.10] - 2020-05-29
 ### Changed
