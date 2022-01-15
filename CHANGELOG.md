@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.0.1] - 2022-01-15
+
+### Added
+
+- Added `.npmignore` file
+
 ## [v2.0.0] - 2022-01-13
 
 ### Added
