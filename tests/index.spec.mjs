@@ -1,4 +1,4 @@
-import THREE from 'three';
+import * as THREE from 'three';
 import fs from 'fs';
 import { expect } from 'chai';
 import { PLYLoaderFactory } from '../src/index.mjs';
