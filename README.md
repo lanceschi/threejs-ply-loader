@@ -1,10 +1,10 @@
 ![ci](https://github.com/lanceschi/threejs-ply-loader/workflows/ci/badge.svg)&nbsp;&nbsp;&nbsp;![npm publish](https://github.com/lanceschi/threejs-ply-loader/workflows/npm%20publish/badge.svg)&nbsp;&nbsp;&nbsp;[![npm version](https://badge.fury.io/js/threejs-ply-loader.svg)](http://badge.fury.io/js/threejs-ply-loader)&nbsp;&nbsp;&nbsp;![npm](https://img.shields.io/npm/dm/threejs-ply-loader)
 
-
 # Three.js PLY file format loader to use with Node.js
 
 ## Description
-Node.js wrapper for [three.js][THREEJS-github-link] PLYLoader (currently three.js v0.136.0).
+
+Node.js wrapper for [three.js][THREEJS-github-link] PLYLoader (currently three.js v0.137.0).
 
 Original PLYLoader source code can be found [here][PLYLoader-source-link].
 
@@ -41,7 +41,6 @@ const THREE = require("three");
 })();
 ```
 
-
 ## Example
 
 An example is present in the examples folder. It will load a PLY file model and output its rendering to a PNG file. It can be run from a shell:
@@ -53,8 +52,8 @@ npm run example:cube-to-png
 
 The output image is going to located in `examples/temp/vertex-colored-cube.png`
 
-
 ## Tests
+
 They can be run from a shell:
 
 ```bash
@@ -63,9 +62,10 @@ npm test
 ```
 
 ## Development notes
+
 Developed with Node v16.13.2
 
 [THREEJS-github-link]: https://github.com/mrdoob/three.js
-[PLYLoader-source-link]: https://github.com/mrdoob/three.js/blob/r136/examples/js/loaders/PLYLoader.js
+[PLYLoader-source-link]: https://github.com/mrdoob/three.js/blob/r137/examples/js/loaders/PLYLoader.js
 [javascript-module-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 [dynamic-import-url]: https://v8.dev/features/dynamic-import#dynamic

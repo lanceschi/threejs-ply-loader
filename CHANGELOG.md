@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.0.2] - 2022-01-29
+
+### Changed
+
+- NPM package upgrades:
+  - cross-blob ^3.0.0 → ^3.0.1
+  - chai ^4.3.4 → ^4.3.6
+  - eslint ^8.6.0 → ^8.8.0
+  - mocha ^9.1.3 → ^9.2.0
+  - three ^0.125.1 → ^0.137.5
+
 ## [v2.0.1] - 2022-01-15
 
 ### Added
