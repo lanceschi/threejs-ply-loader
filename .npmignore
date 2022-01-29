@@ -22,3 +22,5 @@ tests
 .nvmrc
 .prettierrc
 CONTRIBUTING.md
+README.md
+CHANGELOG.md
