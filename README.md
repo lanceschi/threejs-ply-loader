@@ -63,7 +63,7 @@ npm test
 
 ## Development notes
 
-Developed with Node v16.13.2
+Developed with Node v18.18.0
 
 [THREEJS-github-link]: https://github.com/mrdoob/three.js
 [PLYLoader-source-link]: https://github.com/mrdoob/three.js/blob/r137/examples/js/loaders/PLYLoader.js
