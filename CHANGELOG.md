@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Upgraded node binary to `18.18.0`
+- Updated LICENSE date
+
 ## [v2.0.2] - 2022-01-29
 
 ### Changed
